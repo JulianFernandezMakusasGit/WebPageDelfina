@@ -2,6 +2,7 @@ import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { BarraSuperiorComponent } from './barra-superior.component';
 
+
 describe('BarraSuperiorComponent', () => {
   let component: BarraSuperiorComponent;
   let fixture: ComponentFixture<BarraSuperiorComponent>;

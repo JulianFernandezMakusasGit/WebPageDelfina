@@ -1,0 +1,42 @@
+/* BARRA SUPERIOR */
+.barraSuperior {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background: transparent;
+}
+
+.proyectos {
+    background-color: transparent;
+    font-family: Sarabun;
+    font-size: 36px;
+    font-weight: lighter;
+    text-align: left;
+    color: white;
+    border-color: transparent;
+    cursor: pointer;
+}
+
+.sobreMi {
+    background-color: transparent;
+    font-family: Sarabun;
+    font-size: 36px;
+    font-weight: lighter;
+    text-align: left;
+    color: white;
+    border-color: transparent;
+    cursor: pointer;
+}
+
+.contacto {
+    background-color: transparent;
+    font-family: Sarabun;
+    font-size: 36px;
+    font-weight: lighter;
+    text-align: left;
+    color: white;
+    border-color: transparent;
+    cursor: pointer;
+}
