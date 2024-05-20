@@ -10,6 +10,7 @@
 
 /* TEXTO DE PRESENTACION A LA DERECHA DE LA FOTO CON BARRA DE ICONOS */
 .textoPresentacion {
+    background-color: #5F184B;
     align-content: right;
     font-family: 'Sarabun', sans-serif;
     float: right;
@@ -19,7 +20,7 @@
     padding-bottom: 7%;
 }
 
-.textoPresentacion h1 {
+.hola {
     top: auto;
     left: auto;
     font-family: 'Sarabun', sans-serif;
@@ -32,7 +33,7 @@
     color: #F8B133;
 }
 
-.textoPresentacion p {
+.presentacion {
     block-size: auto;
     top: auto;
     left: auto;
@@ -52,11 +53,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 600px;
+    height: 100%;
+    max-height: 600px;
 }
 
 /* BARRA DE ICONOS PRESENTACION */
-.textoPresentacion mat-toolbar {
+.botonesUtiles {
     background-color: #5F184B;
     padding-top: 50px;
 }
@@ -85,23 +87,16 @@
     border-block-width: 3px;
     border-color: #F8B133;
     border-radius: 27px;
-    height: 37px;
-    width: 175px;
+    max-height: 37px;
+    max-width: 175px;
     color: white;
     cursor: pointer;
 }
 
-@media (max-width: 768px){
+@media (max-width: 700px){
     .presentacion {
         flex-direction: column;
+        display: block;
         text-align: center;
-    }
-    .textoPresentacion {
-        align-content: right;
-        font-family: 'Sarabun', sans-serif;
-        float: right;
-        width: 38,5%;
-        height: 49,35%;
-        padding-left: 20%;
     }
 }

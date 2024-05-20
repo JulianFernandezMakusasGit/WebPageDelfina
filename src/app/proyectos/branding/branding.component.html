@@ -1,2 +1,9 @@
 <div class="branding">
+    <ul class="imageGrid">
+        <li class="item" *ngFor="let image of images" >
+            <div class="image-aspect-container">
+                <img class="image" [src]="image.url">
+            </div>
+        </li>
+    </ul>
 </div>

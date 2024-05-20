@@ -10,4 +10,11 @@ import { CommonModule } from '@angular/common';
   styleUrl: './branding.component.css'
 })
 export class BrandingComponent {
+  images = [
+    {url: '../../assets/Proyectos/Branding/Agustina.jpg', title: "Agustina", width: "", height: ""},
+    {url: '../../assets/Proyectos/Branding/AntiQ.jpg', title: "AntiQ", width: "", height: ""},
+    {url: '../../assets/Proyectos/Branding/CCRecoleta.jpg', title: "CCRecoleta", width: "", height: ""},
+    {url: '../../assets/Proyectos/Branding/ElAlmacen.jpg', title: "ElAlmacen", width: "", height: ""},
+    {url: '../../assets/Proyectos/Branding/Lilith.jpg', title: "Lilith", width: "", height: ""},
+  ]
 }
