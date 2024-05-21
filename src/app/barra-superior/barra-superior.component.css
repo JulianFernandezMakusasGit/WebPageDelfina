@@ -1,8 +1,8 @@
 /* BARRA SUPERIOR */
 .barraSuperior {
     position: fixed;
-    top: 0;
-    left: 0;
+    top: 5%;
+    left: 6%;
     width: 100%;
     z-index: 1000;
     background: transparent;
@@ -17,6 +17,7 @@
     color: white;
     border-color: transparent;
     cursor: pointer;
+    padding-left: 2.5%;
 }
 
 .sobreMi {
@@ -28,6 +29,7 @@
     color: white;
     border-color: transparent;
     cursor: pointer;
+    padding: 2%;
 }
 
 .contacto {
@@ -39,4 +41,5 @@
     color: white;
     border-color: transparent;
     cursor: pointer;
+    padding: 2%;
 }

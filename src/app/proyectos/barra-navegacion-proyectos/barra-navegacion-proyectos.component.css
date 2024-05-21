@@ -1,0 +1,101 @@
+.barraDeNavegacion {
+    display: flex;
+    background-color: transparent;
+}
+  
+.branding {
+    background-color: #5F184B;
+    color: white;
+    width: 40%;
+    font-family: Sarabun;
+    font-size: 64px;
+    font-weight: 275;
+    line-height: 83.2px;
+    text-align: center;
+    border: none;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    cursor: pointer;
+    z-index: 2;
+}
+  
+.redesSociales {
+    background-color: #F8B133;
+    color: Violeta;
+    width: 40%;
+    font-family: Sarabun;
+    font-size: 64px;
+    font-weight: 275;
+    line-height: 83.2px;
+    text-align: center;
+    border: none;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    cursor: pointer;
+    margin-left: -50px;
+    z-index: 1;
+}
+
+.packaging {
+    background-color: #1E1E1E;
+    color: white;
+    width: 40%;
+    font-family: Sarabun;
+    font-size: 64px;
+    font-weight: 275;
+    line-height: 83.2px;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    margin-left: -50px;
+    z-index: 0;
+}
+
+@media (max-width: 1052px){
+    .barraDeNavegacion {
+        flex-direction: column;
+        columns: auto;
+        text-align: center;
+    }
+    .branding {
+        background-color: #5F184B;
+        color: white;
+        width: auto;
+        font-family: Sarabun;
+        font-size: 64px;
+        font-weight: 275;
+        line-height: 83.2px;
+        text-align: center;
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 0px;
+        cursor: pointer;
+    }
+      
+    .redesSociales {
+        background-color: #F8B133;
+        color: Violeta;
+        width: auto;
+        font-family: Sarabun;
+        font-size: 64px;
+        font-weight: 275;
+        line-height: 83.2px;
+        text-align: center;
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 0px;
+        cursor: pointer;
+    }
+    
+    .packaging {
+        background-color: #1E1E1E;
+        color: white;
+        width: auto;
+        font-family: Sarabun;
+        font-size: 64px;
+        font-weight: 275;
+        line-height: 83.2px;
+        text-align: center;
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 0px;
+        cursor: pointer;        
+    }
+}

@@ -1,18 +1,14 @@
-.branding {
-    display: block;
-    background-color: #5F184B;
 
-}
 .imageGrid{
     display: grid;
     justify-content: center;
-    grid-template-columns: 30% 30% 30%;
+    grid-template-columns: auto auto auto;
     gap: 48px;
 }
 
 @media only screen and (max-width: 700px) {
     .imageGrid {
-      grid-template-columns: auto auto auto;
+      grid-template-columns: auto;
     }
   }
 
@@ -25,9 +21,29 @@
     flex-wrap: wrap;
 
 }
-.image{
+.image1x1{
     width: 100%;
     max-width: 447px;
+    border-radius: 60px;
+    min-width: 50px;
+    min-height: 50px;
+}
+
+.image1x2{
+    width: 100%;
+    height: 100%;
+    max-width: 447px;
+    max-height: 860px;
+    border-radius: 60px;
+    min-width: 50px;
+    min-height: 50px;
+}
+
+.image2x1{
+    width: 100%;
+    height: 100%;
+    max-width: 860px;
+    max-height: 447px;
     border-radius: 60px;
     min-width: 50px;
     min-height: 50px;
