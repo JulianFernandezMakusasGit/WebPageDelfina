@@ -1,24 +1,21 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { ProyectosComponent } from './proyectos/proyectos.component';
 import { PresentacionComponent } from './presentacion/presentacion.component';
 import { ContactoComponent } from './contacto/contacto.component';
-import { BarraSuperiorComponent } from './barra-superior/barra-superior.component';
+import { RedesSocialesComponent } from './proyectos/redes-sociales/redes-sociales.component';
+import { PackagingComponent } from './proyectos/packaging/packaging.component';
+import { BrandingComponent } from './proyectos/branding/branding.component';
+import { ProyectosComponent } from './proyectos/proyectos.component';
 
 export const routes: Routes = [
-    {path: '', pathMatch: 'full', redirectTo: 'home'},
-    {path: 'sobreMi', component: PresentacionComponent},
-    {path: 'contacto', component: ContactoComponent},
-    {path: 'branding', component: ProyectosComponent},
-    {path: 'redesSociales', component: ProyectosComponent},
-    {path: 'packaging', component: ProyectosComponent},
-    {path: 'proyectos', redirectTo: 'branding'},
-    {path: '**', redirectTo: 'home'}
-  ];
+  {path: 'branding', component: BrandingComponent},
+  {path: 'redesSociales', component: RedesSocialesComponent},
+  {path: 'packaging', component: PackagingComponent}
+];
   
   @NgModule({
     declarations: [],
-    imports: [RouterModule.forRoot(routes), BarraSuperiorComponent],
+    imports: [RouterModule.forRoot(routes)],
     exports: [RouterModule]
   })
   export class AppRoutingModule { }

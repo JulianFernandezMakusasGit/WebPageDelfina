@@ -1,0 +1,63 @@
+.packaging {
+    background-color: #1E1E1E;
+}
+.item{
+    color: #1E1E1E;
+}
+
+.imageGrid{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: auto auto auto;
+    gap: 48px;
+}
+
+.imageGrid img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@media only screen and (max-width: 700px) {
+    .imageGrid {
+      grid-template-columns: auto;
+    }
+  }
+
+
+.image-aspect-container {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.image1x1{
+    width: 100%;
+    max-width: 447px;
+    border-radius: 60px;
+    min-width: 50px;
+    min-height: 50px;
+}
+
+.image1x2{
+    width: 100%;
+    height: 100%;
+    max-width: 447px;
+    max-height: 860px;
+    grid-column: span 1;
+    grid-row: span 2;
+    border-radius: 60px;
+    min-width: 50px;
+    min-height: 50px;
+}
+
+.image2x1{
+    width: 100%;
+    height: 100%;
+    grid-column: span 2;
+    grid-row: span 1;
+    max-width: 860px;
+    max-height: 447px;
+    border-radius: 60px;
+    min-width: 50px;
+    min-height: 50px;
+}

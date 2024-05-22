@@ -1,5 +1,5 @@
-<div class="barraDeNavegacion">
-    <button class="branding">Branding</button>
-    <button class="redesSociales">Redes Sociales</button>
-    <button class="packaging">Packaging</button>
+<div class="barraDeNavegacion" [style.background-color]="colorFondo">
+    <button class="branding" (click)="cambiarCategoria('branding')" (click)="changeColor('#5F184B')">Branding</button>
+    <button class="redesSociales" (click)="cambiarCategoria('redesSociales')" (click)="changeColor('#F8B133')">Redes Sociales</button>
+    <button class="packaging" (click)="cambiarCategoria('packaging')" (click)="changeColor('#1E1E1E')">Packaging</button>
 </div>

@@ -1,7 +1,8 @@
 import { Component, NgModule } from '@angular/core';
 import { MatToolbar } from '@angular/material/toolbar'
 import { Router } from '@angular/router';
-import {RouterModule} from '@angular/router';
+import { RouterModule } from '@angular/router';
+import { ViewportScroller } from '@angular/common';
 
 @Component({
   selector: 'app-barra-superior',
@@ -14,9 +15,9 @@ import {RouterModule} from '@angular/router';
 export class BarraSuperiorComponent {
   title = 'ruta';
 
-  constructor(private router: Router) {}
+  constructor(private router: Router, private viewportScroller: ViewportScroller) {}
 
-  onClick(pRuta: string){
-    this.router.navigate([pRuta]);
+  scrollTo(section: string){
+    this.router.navigate([], {fragment: section});
   }
 }
