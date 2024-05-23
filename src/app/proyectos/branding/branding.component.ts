@@ -1,11 +1,10 @@
 import { Component } from '@angular/core';
 import { MatGridListModule } from '@angular/material/grid-list';
-import { CommonModule } from '@angular/common';
-import { BarraNavegacionProyectosComponent } from '../barra-navegacion-proyectos/barra-navegacion-proyectos.component';
+
 @Component({
   selector: 'app-branding',
   standalone: true,
-  imports: [MatGridListModule, CommonModule, BarraNavegacionProyectosComponent],
+  imports: [MatGridListModule],
   templateUrl: './branding.component.html',
   styleUrl: './branding.component.css'
 })
@@ -19,15 +18,15 @@ export class BrandingComponent {
   }
   
   images = [
-    {url: '../../assets/Proyectos/Branding/Agustina.jpg', title: "Agustina", width: this.calcTamanio(1), height: this.calcTamanio(1)},
-    {url: "../../assets/Proyectos/Branding/Refasi.jpg", title: "Refasi", width: this.calcTamanio(1), height: this.calcTamanio(1)},
-    {url: '../../assets/Proyectos/Branding/Nace.jpg', title: "Nace", width: this.calcTamanio(1), height: this.calcTamanio(2)},
-    {url: '../../assets/Proyectos/Branding/ElAlmacen.jpg', title: "ElAlmacen", width: this.calcTamanio(1), height: this.calcTamanio(1)},
-    {url: '../../assets/Proyectos/Branding/Refazi.jpg', title: "Refazi", width: this.calcTamanio(1), height: this.calcTamanio(1)},
-    {url: '../../assets/Proyectos/Branding/Proteger.jpg', title: "Proteger", width: this.calcTamanio(2), height: this.calcTamanio(1)},
-    {url: '../../assets/Proyectos/Branding/TechStore.jpg', title: "TechStore", width: this.calcTamanio(1), height: this.calcTamanio(1)},
-    {url: '../../assets/Proyectos/Branding/Lilith.jpg', title: "Lilith", width: this.calcTamanio(1), height: this.calcTamanio(1)},
-    {url: '../../assets/Proyectos/Branding/CCRecoleta.jpg', title: "CCRecoleta", width: this.calcTamanio(1), height: this.calcTamanio(1)},
-    {url: '../../assets/Proyectos/Branding/AntiQ.jpg', title: "AntiQ", width: this.calcTamanio(1), height: this.calcTamanio(1)},
+    {src: '../../assets/Proyectos/Branding/Agustina.jpg', title: "Agustina", cols: 1, rows: 1},
+    {src: "../../assets/Proyectos/Branding/Refasi.jpg", title: "Refasi", cols: 1, rows: 1},
+    {src: '../../assets/Proyectos/Branding/Nace.jpg', title: "Nace", cols: 1, rows: 2},
+    {src: '../../assets/Proyectos/Branding/ElAlmacen.jpg', title: "ElAlmacen", cols: 1, rows: 1},
+    {src: '../../assets/Proyectos/Branding/Refazi.jpg', title: "Refazi", cols: 1, rows: 1},
+    {src: '../../assets/Proyectos/Branding/Proteger.jpg', title: "Proteger", cols: 2, rows: 1},
+    {src: '../../assets/Proyectos/Branding/TechStore.jpg', title: "TechStore", cols: 1, rows: 1},
+    {src: '../../assets/Proyectos/Branding/Lilith.jpg', title: "Lilith", cols: 1, rows: 1},
+    {src: '../../assets/Proyectos/Branding/CCRecoleta.jpg', title: "CCRecoleta", cols: 1, rows: 1},
+    {src: '../../assets/Proyectos/Branding/AntiQ.jpg', title: "AntiQ", cols: 1, rows: 1},
   ]
 }

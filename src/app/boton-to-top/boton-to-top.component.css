@@ -1,0 +1,15 @@
+.corner-button {
+    position: fixed;
+    bottom: 20px; /* Ajusta según necesites */
+    right: 20px; /* Ajusta según necesites */
+    padding: 50px 20px; /* Ajusta según necesites */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transform: rotate(270deg);
+    background-color: transparent;
+}
+
+.boton {
+    background-color: transparent;
+}

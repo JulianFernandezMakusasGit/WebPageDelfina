@@ -1,9 +1,9 @@
 import { Component } from '@angular/core';
-import { BarraNavegacionProyectosComponent } from '../barra-navegacion-proyectos/barra-navegacion-proyectos.component';
+import { MatGridListModule } from '@angular/material/grid-list';
 @Component({
   selector: 'app-packaging',
   standalone: true,
-  imports: [BarraNavegacionProyectosComponent],
+  imports: [MatGridListModule],
   templateUrl: './packaging.component.html',
   styleUrl: './packaging.component.css'
 })

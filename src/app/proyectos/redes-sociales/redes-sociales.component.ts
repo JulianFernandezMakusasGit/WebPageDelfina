@@ -1,9 +1,11 @@
 import { Component } from '@angular/core';
+import { MatGridListModule } from '@angular/material/grid-list';
+
 
 @Component({
   selector: 'app-redes-sociales',
   standalone: true,
-  imports: [],
+  imports: [MatGridListModule],
   templateUrl: './redes-sociales.component.html',
   styleUrl: './redes-sociales.component.css'
 })

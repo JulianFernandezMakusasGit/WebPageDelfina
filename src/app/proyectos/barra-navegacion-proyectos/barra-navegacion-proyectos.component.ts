@@ -14,7 +14,4 @@ export class BarraNavegacionProyectosComponent {
   cambiarCategoria(pRuta: string) {
     this.router.navigate([pRuta]);
   }
-  changeColor(nuevoColor: string) {
-    this.colorFondo = nuevoColor
-  }
 }

@@ -1,140 +1,46 @@
-.branding {
-  background-color: #5F184B;
-}
-.item{
-    color: #5F184B;
-}
-
-.imageGrid{
-    display: grid;
-    justify-content: center;
-    grid-template-columns: auto auto auto;
-    gap: 48px;
+.gridContainer {
+  padding-top: 6%;
+  padding-left: 12%;
+  padding-right: 14%;
+  padding-bottom: 6%;
 }
 
-.imageGrid img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+mat-grid-list {
+  max-width: 1920px;
+  width: 100%;
+}
+
+mat-grid-tile {
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 60px;
+}
+
+.gridImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.image1x1 {
+  max-width: 447px;
+  max-height: 447px;
+}
+
+.image1x2 {
+  max-width: 447px;
+  max-height: 1089px;
+}
+
+.image2x1 {
+  max-height: 1089px;
+  max-height: 447px;
 }
 
 @media only screen and (max-width: 700px) {
-    .imageGrid {
-      grid-template-columns: auto;
-    }
+  .imageGrid {
+    grid-template-columns: auto;
   }
-
-
-.image-aspect-container {
-    display: flex;
-    flex-wrap: wrap;
-
 }
-.image1x1{
-    width: 100%;
-    max-width: 447px;
-    border-radius: 60px;
-    min-width: 50px;
-    min-height: 50px;
-}
-
-.image1x2{
-    width: 100%;
-    height: 100%;
-    max-width: 447px;
-    max-height: 860px;
-    grid-column: span 1;
-    grid-row: span 2;
-    border-radius: 60px;
-    min-width: 50px;
-    min-height: 50px;
-}
-
-.image2x1{
-    width: 100%;
-    height: 100%;
-    grid-column: span 2;
-    grid-row: span 1;
-    max-width: 860px;
-    max-height: 447px;
-    border-radius: 60px;
-    min-width: 50px;
-    min-height: 50px;
-}
-
-
-/* .flexcontainer {
-  width: 1920px;
-  height: 1080px;
-  border: 3px solid black;
-  display: flex;
-  flex-flow: column wrap;
-  padding: 5px;
-}
-
-
-.flexitem {
-  background: yellow;
-  text-align: center;
-  margin: 48px;
-}
-
-.one {
-  width: 447px;
-  height: 447px;
-  order: 1;
-}
-
-.two {
-  width: 447px;
-  height: 447px;
-  order: 2;
-}
-
-.three { 
-  width: 447px;
-  height: 942px;
-  order: 3; 
-}
-
-.four { 
-  width: 447px;
-  height: 447px;
-  order: 4; 
-}
-
-.five { 
-  width: 447px;
-  height: 447px;
-  order: 5; 
-}
-
-.six { 
-  width: 942px;
-  height: 447px;
-  order: 6; 
-}
-
-.seven { 
-  width: 447px;
-  height: 447px;
-  order: 7; 
-}
-
-.eight { 
-  width: 447px;
-  height: 447px;
-  order: 8; 
-}
-
-.nine { 
-  width: 447px;
-  height: 447px;
-  order: 9; 
-}
-
-.ten { 
-  width: 447px;
-  height: 447px;
-  order: 10; 
-} */

@@ -12,6 +12,8 @@ import { ViewportScroller } from '@angular/common';
 import { BrandingComponent } from './proyectos/branding/branding.component';
 import { PackagingComponent } from './proyectos/packaging/packaging.component';
 import { RedesSocialesComponent } from './proyectos/redes-sociales/redes-sociales.component';
+import { BotonToTopComponent } from './boton-to-top/boton-to-top.component';
+import { SobreMiComponent } from './sobre-mi/sobre-mi.component';
 
 @Component({
   selector: 'app-root',
@@ -26,7 +28,9 @@ import { RedesSocialesComponent } from './proyectos/redes-sociales/redes-sociale
             RedesSocialesComponent,
             ContactoComponent, 
             MatToolbar,
-            BarraNavegacionProyectosComponent],
+            BarraNavegacionProyectosComponent,
+            BotonToTopComponent,
+            SobreMiComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })

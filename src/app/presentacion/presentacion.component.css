@@ -8,6 +8,12 @@
     align-items: center;
 }
 
+.logoTop {
+    position: absolute;
+    top: -208px;
+    left: 1396px;
+}
+
 /* TEXTO DE PRESENTACION A LA DERECHA DE LA FOTO CON BARRA DE ICONOS */
 .textoPresentacion {
     background-color: #5F184B;

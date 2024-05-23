@@ -7,14 +7,15 @@
     background-color: #5F184B;
     color: white;
     width: 40%;
+    height: 176px;
     font-family: Sarabun;
     font-size: 64px;
     font-weight: 275;
     line-height: 83.2px;
     text-align: center;
     border: none;
-    border-top-right-radius: 50px;
-    border-bottom-right-radius: 50px;
+    border-top-right-radius: 88px;
+    border-bottom-right-radius: 88px;
     cursor: pointer;
     z-index: 2;
 }
@@ -23,16 +24,17 @@
     background-color: #F8B133;
     color: Violeta;
     width: 40%;
+    height: 176px;
     font-family: Sarabun;
     font-size: 64px;
     font-weight: 275;
     line-height: 83.2px;
     text-align: center;
     border: none;
-    border-top-right-radius: 50px;
-    border-bottom-right-radius: 50px;
+    border-top-right-radius: 88px;
+    border-bottom-right-radius: 88px;
     cursor: pointer;
-    margin-left: -50px;
+    margin-left: -88px;
     z-index: 1;
 }
 
@@ -40,6 +42,7 @@
     background-color: #1E1E1E;
     color: white;
     width: 40%;
+    height: 176px;
     font-family: Sarabun;
     font-size: 64px;
     font-weight: 275;
@@ -47,7 +50,7 @@
     text-align: center;
     border: none;
     cursor: pointer;
-    margin-left: -50px;
+    margin-left: -88px;
     z-index: 0;
 }
 
@@ -61,6 +64,7 @@
         background-color: #5F184B;
         color: white;
         width: auto;
+        height: 176px;
         font-family: Sarabun;
         font-size: 64px;
         font-weight: 275;
@@ -75,6 +79,7 @@
         background-color: #F8B133;
         color: Violeta;
         width: auto;
+        height: 176px;
         font-family: Sarabun;
         font-size: 64px;
         font-weight: 275;
@@ -89,6 +94,7 @@
         background-color: #1E1E1E;
         color: white;
         width: auto;
+        height: 176px;
         font-family: Sarabun;
         font-size: 64px;
         font-weight: 275;
