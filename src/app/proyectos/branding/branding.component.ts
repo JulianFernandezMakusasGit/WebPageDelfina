@@ -9,14 +9,6 @@ import { MatGridListModule } from '@angular/material/grid-list';
   styleUrl: './branding.component.css'
 })
 export class BrandingComponent {
-  calcTamanio(multiplicador: any) {
-    if(multiplicador > 1) {
-      return multiplicador*447 + 48
-    } else {
-      return multiplicador*447
-    }
-  }
-  
   images = [
     {src: '../../assets/Proyectos/Branding/Agustina.jpg', title: "Agustina", cols: 1, rows: 1},
     {src: "../../assets/Proyectos/Branding/Refasi.jpg", title: "Refasi", cols: 1, rows: 1},

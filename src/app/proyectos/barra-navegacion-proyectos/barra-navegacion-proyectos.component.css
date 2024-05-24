@@ -82,18 +82,61 @@
         cursor: pointer;
     }
 }
-@media (min-width:600px)  { 
-
-}
-@media (min-width:801px)  { 
+@media (min-width:700px)  { 
+    .barraDeNavegacion {
+        display: flex;
+        flex-direction: row;
+        background-color: transparent;
+    }
+        
+    .branding {
+        background-color: #5F184B;
+        color: white;
+        height: 6vh;
+        font-size: 3vh;
+        font-family: Sarabun;
+        text-align: center;
+        border: none;
+        cursor: pointer;
+        border-top-right-radius: 88px;
+        border-bottom-right-radius: 88px;
+        cursor: pointer;
+        z-index: 2;
+    }
+        
+    .redesSociales {
+        background-color: #F8B133;
+        color: Violeta;
+        height: 6vh;
+        font-size: 3vh;
+        font-family: Sarabun;
+        text-align: center;
+        border: none;
+        cursor: pointer;
+        border-top-right-radius: 88px;
+        border-bottom-right-radius: 88px;
+        cursor: pointer;
+        margin-left: -3%;
+        z-index: 1;
+    }
     
-}
-@media (min-width:1025px) { 
-    
+    .packaging {
+        background-color: #1E1E1E;
+        color: white;
+        height: 6vh;
+        font-size: 3vh;
+        font-family: Sarabun;
+        text-align: center;
+        border: none;
+        cursor: pointer;
+        margin-left: -3%;
+        z-index: 0;
+    }
 }
 @media (min-width:1920px) { 
     .barraDeNavegacion {
     display: flex;
+    flex-direction: row;
     background-color: transparent;
     }
     

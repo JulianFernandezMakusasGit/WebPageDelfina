@@ -39,15 +39,22 @@ mat-grid-tile {
   max-height: 447px;
 }
 
-@media only screen and (max-width: 700px) {
-  .imageGrid {
-    grid-template-columns: auto;
+@media (min-width:320px)  { 
+  mat-grid-tile {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
   }
 }
 
-@media (min-width:320px)  { }
-@media (min-width:480px)  { }
-@media (min-width:600px)  { }
-@media (min-width:801px)  { }
-@media (min-width:1025px) { }
-@media (min-width:1281px) { }
+@media (min-width:700px)  { 
+  mat-grid-tile {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 60px;
+  }
+}
