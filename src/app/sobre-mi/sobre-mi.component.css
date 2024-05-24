@@ -1,6 +1,159 @@
-@media (min-width:320px)  { }
-@media (min-width:480px)  { }
-@media (min-width:600px)  { }
-@media (min-width:801px)  { }
-@media (min-width:1025px) { }
-@media (min-width:1281px) { }
+
+@media (min-width:320px)  { 
+    .sobreMi {
+        display: flex;
+        flex-direction: column;
+        background-color: #8C8C8C;
+        z-index: -2;
+    }
+    
+    .textoSobreMi {
+        background-color: #5F184B;
+        z-index: 1;
+        padding-top: 10%;
+        padding-bottom: 10%;
+        padding-left: 10%;
+    }
+    
+    .textoSobreMi h1 {
+        background-color: inherit;
+        border-top-right-radius: inherit;
+        font-family: 'Sarabun', sans-serif;
+        font-size: 96px;
+        font-style: italic;
+        font-weight: 400;
+        line-height: 124.8px;
+        text-align: left;
+        color: #F8B133;
+    }
+    
+    .textoSobreMi p {
+        background-color: inherit;
+        border-top-right-radius: inherit;
+        font-family: 'Sarabun', sans-serif;
+        font-size: 32px;
+        font-weight: 400;
+        line-height: 41.6px;
+        text-align: left;
+        color: #FFFFFF;
+    }
+    
+    .fotoYlogo {
+        background-color: #8C8C8C;
+        width: 50%;
+    }
+     
+    .logoTop {
+        position: relative;
+        width: 0px;
+        height: 0px;
+        top: 10px;
+        left: 569px;
+        padding: 0px 0.04px 0px 0px;
+        z-index: 0;
+    } 
+    
+    .fotoConEstrellaContainer {
+        margin-top: -5%;
+        padding-bottom: 5%;
+    }
+    
+    .estrellaFoto {
+        position: relative;
+        width: 0px;
+        height: 0px;
+        top: -407px;
+        left: 565px;
+        z-index: 2;
+    }
+     
+    .marcoFoto {
+        width: 500px;
+        height: 500px;
+        align-items: center;
+        border: 40px solid #FFFFFF;
+        border-radius: 1000px;
+        z-index: 1;
+    }
+}
+@media (min-width:1920px) { 
+    .sobreMi {
+        display: flex;
+        flex-direction: row;
+        background-color: #8C8C8C;
+        z-index: -2;
+    }
+    
+    .textoSobreMi {
+        background-color: #5F184B;
+        border-top-right-radius: 300px;
+        width: 50%;
+        z-index: 1;
+        padding-top: 10%;
+        padding-bottom: 10%;
+        padding-left: 10%;
+    }
+    
+    .textoSobreMi h1 {
+        background-color: inherit;
+        width: 54%;
+        border-top-right-radius: inherit;
+        font-family: 'Sarabun', sans-serif;
+        font-size: 96px;
+        font-style: italic;
+        font-weight: 400;
+        line-height: 124.8px;
+        text-align: left;
+        color: #F8B133;
+    }
+    
+    .textoSobreMi p {
+        background-color: inherit;
+        width: 65%;
+        border-top-right-radius: inherit;
+        font-family: 'Sarabun', sans-serif;
+        font-size: 32px;
+        font-weight: 400;
+        line-height: 41.6px;
+        text-align: left;
+        color: #FFFFFF;
+    }
+    
+    .fotoYlogo {
+        background-color: #8C8C8C;
+        width: 50%;
+    }
+     
+    .logoTop {
+        position: relative;
+        width: 400px;
+        height: 400px;
+        top: 10px;
+        left: 458px;
+        padding: 0px 0.04px 0px 0px;
+        z-index: 0;
+    } 
+    
+    .fotoConEstrellaContainer {
+        margin-top: -5%;
+        padding-bottom: 5%;
+    }
+    
+    .estrellaFoto {
+        width: 162px;
+        height: 162px;
+        top: -407px;
+        left: 565px;
+        z-index: 2;
+        position: relative;
+    }
+     
+    .marcoFoto {
+        width: 500px;
+        height: 500px;
+        align-items: center;
+        border: 40px solid #FFFFFF;
+        border-radius: 1000px;
+        z-index: 1;
+    }
+}
