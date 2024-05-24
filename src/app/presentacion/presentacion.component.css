@@ -1,110 +1,576 @@
-.presentacion {
-    /*padding-left: 2%;*/
-    padding-right: 2%;
-    padding-top: 5%;
-    background-color: #5F184B;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-
-.logoTop {
-    position: absolute;
-    top: -208px;
-    left: 1396px;
-}
-
-/* TEXTO DE PRESENTACION A LA DERECHA DE LA FOTO CON BARRA DE ICONOS */
-.textoPresentacion {
-    background-color: #5F184B;
-    align-content: right;
-    font-family: 'Sarabun', sans-serif;
-    float: right;
-    width: 38,5%;
-    height: 49,35%;
-    padding-left: 20%;
-    padding-bottom: 7%;
-}
-
-.hola {
-    top: auto;
-    left: auto;
-    font-family: 'Sarabun', sans-serif;
-    font-size: 128px;
-    font-style: italic;
-    font-weight: 600;
-    line-height: 166px;
-    letter-spacing: 0em;
-    text-align: left;    
-    color: #F8B133;
-}
-
-.presentacion {
-    block-size: auto;
-    top: auto;
-    left: auto;
-    font-family: 'Sarabun', sans-serif;
-    font-size: 32px;
-    font-weight: 400;
-    line-height: 42px;
-    letter-spacing: 0em;
-    text-align: left;
-    color: white;
-}
-
-/* FOTO */
-.marcoFoto {
-    justify-content: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    max-width: 801.5px;
-}
-
-/* BARRA DE ICONOS PRESENTACION */
-.botonesUtiles {
-    background-color: #5F184B;
-    padding-top: 50px;
-}
-
-.linkedIn {
-    margin-right: 20px;
-    border-color: transparent;
-    background-color: transparent;
-    cursor: pointer;
-}
-
-.correo {
-    margin-right: 20px;
-    border-color: transparent;
-    background-color: transparent;
-    cursor: pointer;
-}
-
-.instagram {
-    margin-right: 20px;
-    border-color: transparent;
-    background-color: transparent;
-    cursor: pointer;
-}
-
-.descargarCV {
-    margin-right: 20px;
-    background-color: transparent;
-    border-block-width: 3px;
-    border-color: #F8B133;
-    border-radius: 27px;
-    max-height: 37px;
-    max-width: 175px;
-    color: white;
-    cursor: pointer;
-}
-
-@media (max-width: 1052px){
+@media (min-width:320px)  { 
     .presentacion {
+        background-color: #5F184B;
         flex-direction: column;
-        display: block;
+    }
+
+    .logoTop {
+        position: absolute;
+        top: -208px;
+        left: 1396px;
+    }
+
+    .textoPresentacion {
+        background-color: #5F184B;
+        text-align: center;
+        font-family: 'Sarabun', sans-serif;
+        max-width: 100%;
         text-align: center;
     }
+
+    .hola {
+        top: auto;
+        left: auto;
+        font-family: 'Sarabun', sans-serif;
+        font-size: 10vh;
+        font-style: italic;
+        font-weight: 600;
+        letter-spacing: 0em;
+        color: #F8B133;
+        padding-bottom: 3vh;
+    }
+
+    .presentacion {
+        font-family: 'Sarabun', sans-serif;
+        font-size:2vh;
+        font-weight: 400;
+        letter-spacing: 0em;
+        color: white;
+    }
+
+    .marcoFoto {
+        max-width: 30vh;
+        padding-left: 15%;
+        padding-top: 15%;
+        padding-right: 15%;
+        padding-bottom: 10%;
+        height: auto;     
+    }
+
+    .botonesUtiles {
+        background-color: #5F184B;
+        align-items: center;
+    }
+
+    .flecha {
+        width:8vh;
+        height:4vh;
+    }
+
+    .linkedIn {
+        width:6vh;
+        height:6vh;
+        border-color: transparent;
+        background-color: transparent;
+        cursor: pointer;
+    }
+
+    .correo {
+        width:6vh;
+        height:6vh;
+        border-color: transparent;
+        background-color: transparent;
+        cursor: pointer;
+    }
+
+    .instagram {
+        width:6vh;
+        height:6vh;
+        border-color: transparent;
+        background-color: transparent;
+        cursor: pointer;
+    }
+
+    .descargarCV {
+        background-color: transparent;
+        border-block-width: 3px;
+        border-color: #F8B133;
+        border-radius: 27px;
+        max-height: 37px;
+        max-width: 175px;
+        color: white;
+        cursor: pointer;
+    }
+}
+@media (min-width:480px)  { 
+    .presentacion {
+        background-color: #5F184B;
+        flex-direction: column;
+    }
+
+    .logoTop {
+        position: absolute;
+        top: -208px;
+        left: 1396px;
+    }
+
+    .textoPresentacion {
+        background-color: #5F184B;
+        text-align: center;
+        font-family: 'Sarabun', sans-serif;
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .hola {
+        top: auto;
+        left: auto;
+        font-family: 'Sarabun', sans-serif;
+        font-size: 10vh;
+        font-style: italic;
+        font-weight: 600;
+        letter-spacing: 0em;
+        color: #F8B133;
+        padding-bottom: 3vh;
+    }
+
+    .presentacion {
+        font-family: 'Sarabun', sans-serif;
+        font-size:2vh;
+        font-weight: 400;
+        letter-spacing: 0em;
+        color: white;
+    }
+
+    .marcoFoto {
+        max-width: 40vh;
+        padding: 20%;
+        height: auto;     
+    }
+
+    .botonesUtiles {
+        background-color: #5F184B;
+        padding-left: 15vh;
+    }
+
+    .flecha {
+        width:8vh;
+        height:4vh;
+    }
+
+    .linkedIn {
+        width:6vh;
+        height:6vh;
+        border-color: transparent;
+        background-color: transparent;
+        cursor: pointer;
+    }
+
+    .correo {
+        width:6vh;
+        height:6vh;
+        border-color: transparent;
+        background-color: transparent;
+        cursor: pointer;
+    }
+
+    .instagram {
+        width:6vh;
+        height:6vh;
+        border-color: transparent;
+        background-color: transparent;
+        cursor: pointer;
+    }
+
+    .descargarCV {
+        background-color: transparent;
+        border-block-width: 3px;
+        border-color: #F8B133;
+        border-radius: 27px;
+        max-height: 37px;
+        max-width: 175px;
+        color: white;
+        cursor: pointer;
+    }
+}
+@media (min-width:600px)  { 
+    .presentacion {
+        background-color: #5F184B;
+        flex-direction: column;
+    }
+
+    .logoTop {
+        position: absolute;
+        top: -208px;
+        left: 1396px;
+    }
+
+    .textoPresentacion {
+        background-color: #5F184B;
+        text-align: center;
+        font-family: 'Sarabun', sans-serif;
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .hola {
+        top: auto;
+        left: auto;
+        font-family: 'Sarabun', sans-serif;
+        font-size: 10vh;
+        font-style: italic;
+        font-weight: 600;
+        letter-spacing: 0em;
+        color: #F8B133;
+        padding-bottom: 3vh;
+    }
+
+    .presentacion {
+        font-family: 'Sarabun', sans-serif;
+        font-size:2vh;
+        font-weight: 400;
+        letter-spacing: 0em;
+        color: white;
+    }
+
+    .marcoFoto {
+        max-width: 40vh;
+        padding: 20%;
+        height: auto;     
+    }
+
+    .botonesUtiles {
+        background-color: #5F184B;
+        padding-left: 20vh;
+    }
+
+    .flecha {
+        width:8vh;
+        height:4vh;
+    }
+
+    .linkedIn {
+        width:6vh;
+        height:6vh;
+        border-color: transparent;
+        background-color: transparent;
+        cursor: pointer;
+    }
+
+    .correo {
+        width:6vh;
+        height:6vh;
+        border-color: transparent;
+        background-color: transparent;
+        cursor: pointer;
+    }
+
+    .instagram {
+        width:6vh;
+        height:6vh;
+        border-color: transparent;
+        background-color: transparent;
+        cursor: pointer;
+    }
+
+    .descargarCV {
+        background-color: transparent;
+        border-block-width: 3px;
+        border-color: #F8B133;
+        border-radius: 27px;
+        max-height: 37px;
+        max-width: 175px;
+        color: white;
+        cursor: pointer;
+    }
+}
+@media (min-width:801px)  { 
+    .presentacion {
+        background-color: #5F184B;
+        flex-direction: column;
+    }
+
+    .logoTop {
+        position: absolute;
+        top: -208px;
+        left: 1396px;
+    }
+
+    .textoPresentacion {
+        background-color: #5F184B;
+        text-align: center;
+        font-family: 'Sarabun', sans-serif;
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .hola {
+        top: auto;
+        left: auto;
+        font-family: 'Sarabun', sans-serif;
+        font-size: 10vh;
+        font-style: italic;
+        font-weight: 600;
+        letter-spacing: 0em;
+        color: #F8B133;
+        padding-bottom: 3vh;
+    }
+
+    .presentacion {
+        font-family: 'Sarabun', sans-serif;
+        font-size:2vh;
+        font-weight: 400;
+        letter-spacing: 0em;
+        color: white;
+    }
+
+    .marcoFoto {
+        max-width: 60%;
+        padding-top: 20%;
+        padding-left: 20%;
+        padding-right: 20%;
+        padding-bottom: 5%;
+        height: auto;
+        
+    }
+
+    .botonesUtiles {
+        background-color: #5F184B;
+        padding-left: 30vh;
+    }
+
+    .flecha {
+        width:8vh;
+        height:4vh;
+    }
+
+    .linkedIn {
+        width:6vh;
+        height:6vh;
+        border-color: transparent;
+        background-color: transparent;
+        cursor: pointer;
+    }
+
+    .correo {
+        width:6vh;
+        height:6vh;
+        border-color: transparent;
+        background-color: transparent;
+        cursor: pointer;
+    }
+
+    .instagram {
+        width:6vh;
+        height:6vh;
+        border-color: transparent;
+        background-color: transparent;
+        cursor: pointer;
+    }
+
+    .descargarCV {
+        background-color: transparent;
+        border-block-width: 3px;
+        border-color: #F8B133;
+        border-radius: 27px;
+        max-height: 37px;
+        max-width: 175px;
+        color: white;
+        cursor: pointer;
+    }
+}
+@media (min-width:1025px) { 
+    .presentacion {
+        background-color: #5F184B;
+        flex-direction: column;
+    }
+
+    .logoTop {
+        position: absolute;
+        top: -208px;
+        left: 1396px;
+    }
+
+    .textoPresentacion {
+        background-color: #5F184B;
+        text-align: center;
+        font-family: 'Sarabun', sans-serif;
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .hola {
+        top: auto;
+        left: auto;
+        font-family: 'Sarabun', sans-serif;
+        font-size: 10vh;
+        font-style: italic;
+        font-weight: 600;
+        letter-spacing: 0em;
+        color: #F8B133;
+        padding-bottom: 3vh;
+    }
+
+    .presentacion {
+        font-family: 'Sarabun', sans-serif;
+        font-size:2vh;
+        font-weight: 400;
+        letter-spacing: 0em;
+        color: white;
+    }
+
+    .marcoFoto {
+        max-width: 40vh;
+        padding: 20%;
+        height: auto;     
+    }
+
+    .botonesUtiles {
+        background-color: #5F184B;
+        padding-left: 30vh;
+    }
+
+    .flecha {
+        width:8vh;
+        height:4vh;
+    }
+
+    .linkedIn {
+        width:6vh;
+        height:6vh;
+        border-color: transparent;
+        background-color: transparent;
+        cursor: pointer;
+    }
+
+    .correo {
+        width:6vh;
+        height:6vh;
+        border-color: transparent;
+        background-color: transparent;
+        cursor: pointer;
+    }
+
+    .instagram {
+        width:6vh;
+        height:6vh;
+        border-color: transparent;
+        background-color: transparent;
+        cursor: pointer;
+    }
+
+    .descargarCV {
+        background-color: transparent;
+        border-block-width: 3px;
+        border-color: #F8B133;
+        border-radius: 27px;
+        max-height: 37px;
+        max-width: 175px;
+        color: white;
+        cursor: pointer;
+    }
+}
+@media (min-width:1600px) { 
+    .presentacion {
+        padding-right: 2%;
+        padding-top: 5%;
+        background-color: #5F184B;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    
+    .logoTop {
+        position: absolute;
+        top: -208px;
+        left: 1396px;
+    }
+    
+    .textoPresentacion {
+        background-color: #5F184B;
+        align-content: right;
+        font-family: 'Sarabun', sans-serif;
+        float: right;
+        width: 38,5%;
+        height: 49,35%;
+        padding-left: 20%;
+        padding-bottom: 7%;
+    }
+    
+    .hola {
+        top: auto;
+        left: auto;
+        font-family: 'Sarabun', sans-serif;
+        font-size: 128px;
+        font-style: italic;
+        font-weight: 600;
+        line-height: 166px;
+        letter-spacing: 0em;
+        text-align: left;    
+        color: #F8B133;
+    }
+    
+    .presentacion {
+        block-size: auto;
+        top: auto;
+        left: auto;
+        font-family: 'Sarabun', sans-serif;
+        font-size: 32px;
+        font-weight: 400;
+        line-height: 42px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: white;
+    }
+    
+    .marcoFoto {
+        justify-content: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        max-width: 801.5px;
+    }
+    
+    .botonesUtiles {
+        background-color: #5F184B;
+        padding-top: 50px;
+        padding-left: 0%;
+    }
+    
+    .flecha {
+        width: 115px;
+        height: 60px;
+    }
+
+    .linkedIn {
+        margin-right: 20px;
+        margin-left: 20px;
+        width: 50px;
+        height: 50px;
+        border-color: transparent;
+        background-color: transparent;
+        cursor: pointer;
+    }
+    
+    .correo {
+        margin-right: 20px;
+        width: 50px;
+        height: 50px;
+        border-color: transparent;
+        background-color: transparent;
+        cursor: pointer;
+    }
+    
+    .instagram {
+        margin-right: 20px;
+        width: 50px;
+        height: 50px;
+        border-color: transparent;
+        background-color: transparent;
+        cursor: pointer;
+    }
+    
+    .descargarCV {
+        margin-right: 20px;
+        background-color: transparent;
+        border-block-width: 3px;
+        border-color: #F8B133;
+        border-radius: 27px;
+        max-height: 37px;
+        max-width: 175px;
+        color: white;
+        cursor: pointer;
+    }
+    
 }

@@ -1,107 +1,150 @@
-.barraDeNavegacion {
-    display: flex;
-    background-color: transparent;
-}
-  
-.branding {
-    background-color: #5F184B;
-    color: white;
-    width: 40%;
-    height: 176px;
-    font-family: Sarabun;
-    font-size: 64px;
-    font-weight: 275;
-    line-height: 83.2px;
-    text-align: center;
-    border: none;
-    border-top-right-radius: 88px;
-    border-bottom-right-radius: 88px;
-    cursor: pointer;
-    z-index: 2;
-}
-  
-.redesSociales {
-    background-color: #F8B133;
-    color: Violeta;
-    width: 40%;
-    height: 176px;
-    font-family: Sarabun;
-    font-size: 64px;
-    font-weight: 275;
-    line-height: 83.2px;
-    text-align: center;
-    border: none;
-    border-top-right-radius: 88px;
-    border-bottom-right-radius: 88px;
-    cursor: pointer;
-    margin-left: -88px;
-    z-index: 1;
-}
 
-.packaging {
-    background-color: #1E1E1E;
-    color: white;
-    width: 40%;
-    height: 176px;
-    font-family: Sarabun;
-    font-size: 64px;
-    font-weight: 275;
-    line-height: 83.2px;
-    text-align: center;
-    border: none;
-    cursor: pointer;
-    margin-left: -88px;
-    z-index: 0;
-}
-
-@media (max-width: 1052px){
+@media (min-width:320px)  { 
     .barraDeNavegacion {
+        display: flex;
         flex-direction: column;
-        columns: auto;
-        text-align: center;
+        background-color: transparent;
     }
+        
     .branding {
         background-color: #5F184B;
         color: white;
-        width: auto;
-        height: 176px;
+        height: 6vh;
+        font-size: 3vh;
+        width: 100%;
         font-family: Sarabun;
-        font-size: 64px;
-        font-weight: 275;
-        line-height: 83.2px;
         text-align: center;
-        border-top-right-radius: 0px;
-        border-bottom-right-radius: 0px;
+        border: none;
         cursor: pointer;
     }
-      
+        
     .redesSociales {
         background-color: #F8B133;
         color: Violeta;
-        width: auto;
-        height: 176px;
+        height: 6vh;
+        width: 100%;
+        font-size: 3vh;
         font-family: Sarabun;
-        font-size: 64px;
-        font-weight: 275;
-        line-height: 83.2px;
         text-align: center;
-        border-top-right-radius: 0px;
-        border-bottom-right-radius: 0px;
+        border: none;
         cursor: pointer;
     }
     
     .packaging {
         background-color: #1E1E1E;
         color: white;
-        width: auto;
+        height: 6vh;
+        width: 100%;
+        font-size: 3vh;
+        font-family: Sarabun;
+        text-align: center;
+        border: none;
+        cursor: pointer;
+    }
+}
+@media (min-width:480px)  { 
+    .barraDeNavegacion {
+        display: flex;
+        flex-direction: column;
+        background-color: transparent;
+    }
+        
+    .branding {
+        background-color: #5F184B;
+        color: white;
+        height: 6vh;
+        font-size: 3vh;
+        font-family: Sarabun;
+        text-align: center;
+        border: none;
+        cursor: pointer;
+    }
+        
+    .redesSociales {
+        background-color: #F8B133;
+        color: Violeta;
+        height: 6vh;
+        font-size: 3vh;
+        font-family: Sarabun;
+        text-align: center;
+        border: none;
+        cursor: pointer;
+    }
+    
+    .packaging {
+        background-color: #1E1E1E;
+        color: white;
+        height: 6vh;
+        font-size: 3vh;
+        font-family: Sarabun;
+        text-align: center;
+        border: none;
+        cursor: pointer;
+    }
+}
+@media (min-width:600px)  { 
+
+}
+@media (min-width:801px)  { 
+    
+}
+@media (min-width:1025px) { 
+    
+}
+@media (min-width:1920px) { 
+    .barraDeNavegacion {
+    display: flex;
+    background-color: transparent;
+    }
+    
+    .branding {
+        background-color: #5F184B;
+        color: white;
+        width: 40%;
         height: 176px;
         font-family: Sarabun;
         font-size: 64px;
         font-weight: 275;
         line-height: 83.2px;
         text-align: center;
-        border-top-right-radius: 0px;
-        border-bottom-right-radius: 0px;
-        cursor: pointer;        
+        border: none;
+        border-top-right-radius: 88px;
+        border-bottom-right-radius: 88px;
+        cursor: pointer;
+        z-index: 2;
+    }
+    
+    .redesSociales {
+        background-color: #F8B133;
+        color: Violeta;
+        width: 40%;
+        height: 176px;
+        font-family: Sarabun;
+        font-size: 64px;
+        font-weight: 275;
+        line-height: 83.2px;
+        text-align: center;
+        border: none;
+        border-top-right-radius: 88px;
+        border-bottom-right-radius: 88px;
+        cursor: pointer;
+        margin-left: -88px;
+        z-index: 1;
+    }
+
+    .packaging {
+        background-color: #1E1E1E;
+        color: white;
+        width: 40%;
+        height: 176px;
+        font-family: Sarabun;
+        font-size: 64px;
+        font-weight: 275;
+        line-height: 83.2px;
+        text-align: center;
+        border: none;
+        cursor: pointer;
+        margin-left: -88px;
+        z-index: 0;
     }
 }
