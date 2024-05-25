@@ -2,17 +2,32 @@ import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 import {RouterModule} from '@angular/router';
 import { MatToolbar } from '@angular/material/toolbar';
+import { NgIf } from '@angular/common';
 
 @Component({
   selector: 'app-presentacion',
   standalone: true,
-  imports: [RouterModule, MatToolbar],
+  imports: [RouterModule, MatToolbar, NgIf],
   templateUrl: './presentacion.component.html',
   styleUrl: './presentacion.component.css'
 })
 export class PresentacionComponent {
   constructor(private router: Router) { }
   ngOnInit() { }
+
+  showCopyConfirmation = false;
+
+  copyText() {
+    const textToCopy = "Este es el texto que quiero copiar"; // El texto que quieres copiar
+    navigator.clipboard.writeText(textToCopy).then(() => {
+        this.showCopyConfirmation = true;
+        setTimeout(() => {
+          this.showCopyConfirmation = false;
+        }, 2000); // Ocultar el mensaje después de 2 segundos
+    }).catch(err => {
+        console.error('Error al copiar el texto: ', err);
+    });
+  }
 
   onClick(pRuta: string){
     this.router.navigate([pRuta]);
@@ -21,18 +36,29 @@ export class PresentacionComponent {
   async onClickActivas() { }
 
   goToLinkedIn() {
-    window.location.href = "https://www.linkedin.com/in/julian-fern%C3%A1ndez-makusas/";
+    const url = "https://www.linkedin.com/in/julian-fern%C3%A1ndez-makusas/";
+    const nuevaPestania = window.open(url, '_blank');
+    nuevaPestania?.focus;
   }
   
   desglozaCorreo() {
-    throw new Error('Method not implemented.');
+    const textToCopy = "Este es el texto que quiero copiar"; // El texto que quieres copiar
+    navigator.clipboard.writeText(textToCopy).then(() => {
+        console.log('Texto copiado al portapapeles');
+    }).catch(err => {
+        console.error('Error al copiar el texto: ', err);
+    });
   }
   
   goToInstagram() {
-    window.location.href = "https://www.instagram.com/julian_fernandez_makusas/";
+    const url = "https://www.instagram.com/julian_fernandez_makusas/";
+    const nuevaPestania = window.open(url, '_blank');
+    nuevaPestania?.focus;
   }
 
   descargarCV() {
-    throw new Error('Method not implemented.');
+    const url = "../../assets/Presentacion/CurriculumVitae.pdf";
+    const nuevaPestania = window.open(url, '_blank');
+    nuevaPestania?.focus;;
   }
 }

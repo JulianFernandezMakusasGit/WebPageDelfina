@@ -22,9 +22,12 @@
             <button class="linkedIn" (click)="goToLinkedIn()">
                 <img src="../../assets/Presentacion/linkedin.svg" >
             </button>
-            <button class="correo" (click)="desglozaCorreo()">
+            <button class="correo" (click)="copyText()">
                 <img src="../../assets/Presentacion/mail.svg">
             </button>
+            <div *ngIf="showCopyConfirmation" class="copy-confirmation">
+                ¡Correo copiado!
+            </div>              
             <button class="instagram" (click)="goToInstagram()">
                 <img src="../../assets/Presentacion/instagram.svg">
             </button>

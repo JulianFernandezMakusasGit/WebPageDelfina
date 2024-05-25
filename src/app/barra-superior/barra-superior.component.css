@@ -1,5 +1,9 @@
 /* BARRA SUPERIOR */
-
+.inicio {
+    background-color: transparent;
+    border: 0px;
+    cursor: pointer;
+}
 
 @media (min-width:320px)  { 
     .barraSuperior {
