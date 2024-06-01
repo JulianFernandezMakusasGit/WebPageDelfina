@@ -3,11 +3,12 @@ import { Router } from '@angular/router';
 import {RouterModule} from '@angular/router';
 import { MatToolbar } from '@angular/material/toolbar';
 import { NgIf } from '@angular/common';
+import { ContactoComponent } from '../contacto/contacto.component';
 
 @Component({
   selector: 'app-presentacion',
   standalone: true,
-  imports: [RouterModule, MatToolbar, NgIf],
+  imports: [RouterModule, MatToolbar, NgIf, ContactoComponent],
   templateUrl: './presentacion.component.html',
   styleUrl: './presentacion.component.css'
 })
@@ -35,30 +36,12 @@ export class PresentacionComponent {
 
   async onClickActivas() { }
 
-  goToLinkedIn() {
-    const url = "https://www.linkedin.com/in/julian-fern%C3%A1ndez-makusas/";
-    const nuevaPestania = window.open(url, '_blank');
-    nuevaPestania?.focus;
-  }
-  
-  desglozaCorreo() {
-    const textToCopy = "Este es el texto que quiero copiar"; // El texto que quieres copiar
-    navigator.clipboard.writeText(textToCopy).then(() => {
-        console.log('Texto copiado al portapapeles');
-    }).catch(err => {
-        console.error('Error al copiar el texto: ', err);
-    });
-  }
-  
-  goToInstagram() {
-    const url = "https://www.instagram.com/julian_fernandez_makusas/";
-    const nuevaPestania = window.open(url, '_blank');
-    nuevaPestania?.focus;
-  }
-
-  descargarCV() {
-    const url = "../../assets/Presentacion/CurriculumVitae.pdf";
-    const nuevaPestania = window.open(url, '_blank');
-    nuevaPestania?.focus;;
+  resolucionDePc() : boolean{
+    if (typeof window !== "undefined") {
+      var anchoPestania = window.screen.width;
+      var altoPestania = window.screen.height;
+      return (anchoPestania == 1920 && altoPestania == 1080);
+    }
+    return false;   
   }
 }
