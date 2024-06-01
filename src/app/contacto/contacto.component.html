@@ -1,8 +1,16 @@
-<div class="container">
-    <img src="../../assets/Contacto/estrella.svg" class="estrellita">
-    <img src="../../assets/Contacto/estrella.svg" class="estrellita2">
-    <div class="rectangle">
-        <div class="cardCorreo">Correo</div>
-        <div class="cardMensaje">Mensaje</div>
-    </div>
-</div>
+<mat-toolbar class="botonesUtiles">
+    <img class="flecha" src="../../assets/Presentacion/flecha.svg">
+    <button class="linkedIn" (click)="goToLinkedIn()">
+        <img src="../../assets/Presentacion/linkedin.svg" >
+    </button>
+    <button class="correo" (click)="copyText()">
+        <img src="../../assets/Presentacion/mail.svg">
+    </button>
+    <div *ngIf="showCopyConfirmation" class="copy-confirmation">
+        ¡Correo copiado!
+    </div>              
+    <button class="instagram" (click)="goToInstagram()">
+        <img src="../../assets/Presentacion/instagram.svg">
+    </button>
+    <button class="descargarCV" (click)="descargarCV()"> Descargar CV </button>
+</mat-toolbar>

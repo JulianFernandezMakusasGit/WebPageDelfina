@@ -1,0 +1,6 @@
+.full-size-image {
+  max-width: 800px;
+  min-width: 50px;
+  width: 100%;
+  height: auto;
+}
