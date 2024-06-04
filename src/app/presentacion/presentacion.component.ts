@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, HostListener, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import {RouterModule} from '@angular/router';
 import { MatToolbar } from '@angular/material/toolbar';
@@ -14,7 +14,9 @@ import { ContactoComponent } from '../contacto/contacto.component';
 })
 export class PresentacionComponent {
   constructor(private router: Router) { }
-  ngOnInit() { }
+  ngOnInit() { 
+    this.verificarResolucion();
+  }
 
   showCopyConfirmation = false;
 
@@ -36,12 +38,21 @@ export class PresentacionComponent {
 
   async onClickActivas() { }
 
-  resolucionDePc() : boolean{
-    if (typeof window !== "undefined") {
-      var anchoPestania = window.screen.width;
-      var altoPestania = window.screen.height;
-      return (anchoPestania == 1920 && altoPestania == 1080);
+  esResolucionPc: boolean = false;
+
+  @HostListener('window:resize', ['$event'])
+  onResize(event: Event): void {
+    this.verificarResolucion();
+  }
+
+
+  verificarResolucion() : void{
+    if (typeof window !== 'undefined') {
+      const anchoPestania = window.screen.width;
+      const altoPestania = window.screen.height;
+      this.esResolucionPc = (anchoPestania === 1920 && altoPestania === 1080);
+    } else {
+      this.esResolucionPc = false;
     }
-    return false;   
   }
 }

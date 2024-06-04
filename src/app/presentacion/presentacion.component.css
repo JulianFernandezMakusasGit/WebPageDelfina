@@ -23,26 +23,27 @@
     }
 
     .textoPresentacion {
-        text-align: center;
+        text-align: left;
+        padding-left: 8vw;
         font-family: 'Sarabun', sans-serif;
-        width: 100%;
+        width: auto;
     }
 
     .textoPresentacion h1 {
         font-family: 'Sarabun', sans-serif;
-        font-size: 31px;
+        font-size: 6vh;
         font-style: italic;
         font-weight: 400;
-        line-height: 46.8px;
+        line-height: 7vh;
         color: #F8B133;
     }
 
     .textoPresentacion p {
         border-top-right-radius: inherit;
         font-family: 'Sarabun', sans-serif;
-        font-size: 10px;
+        font-size: 3vh;
         font-weight: 400;
-        line-height: 13px;
+        line-height: 4vh;
         color: #FFFFFF;
     }
 
@@ -51,6 +52,8 @@
         max-width: 50vw;
         height: auto;    
         margin-left: 25%;
+        border: 2vh solid #FFFFFF;
+        border-radius: 1000px;
     }
 
     .botonesUtiles {
@@ -98,6 +101,8 @@
         max-width: 50vw;
         height: auto;    
         margin-left: 25%;
+        border: 2vh solid #FFFFFF;
+        border-radius: 1000px;
     }
 
     .botonesUtiles {

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { MatDialog } from '@angular/material/dialog';
 import { ImageModalComponent } from '../../image-modal/image-modal.component';
@@ -14,6 +14,10 @@ import { ImageModalComponent } from '../../image-modal/image-modal.component';
 })
 export class BrandingComponent {
 constructor(public dialog: MatDialog){}
+
+  ngOnInit() { 
+    this.cambiarGutterSize();
+  }
 
   images = [
     {src: '../../assets/Proyectos/Branding/Agustina.jpg', title: "Agustina", cols: 1, rows: 1},
@@ -32,5 +36,21 @@ constructor(public dialog: MatDialog){}
     this.dialog.open(ImageModalComponent, {
       data: { imageSrc, titulo, description }
     });
+  }
+
+  @HostListener('window:resize', ['$event'])
+  onResize(event: Event): void {
+    this.cambiarGutterSize();
+  }
+  gutterSize: string = "32px";
+  cambiarGutterSize(): void {
+    if (typeof window !== 'undefined') {
+      const anchoPestania = window.innerWidth;
+      if (anchoPestania > 1366) {
+        this.gutterSize = '32px';
+      } else {
+        this.gutterSize = '16px';
+      }
+    }
   }
 }

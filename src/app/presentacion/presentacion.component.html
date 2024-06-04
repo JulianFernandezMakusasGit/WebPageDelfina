@@ -1,24 +1,24 @@
 <div class="presentacionDiv">
-    <div class="foto" *ngIf="resolucionDePc(); else elseBlock">
+    <div class="foto" *ngIf="esResolucionPc; else elseBlock">
         <img class="marcoFotoPc" src="../../assets/Presentacion/fotoDelfina.png">
     </div>
     <ng-template #elseBlock>
         <img class="marcoFoto" src="../../assets/Presentacion/Delfina.png">
     </ng-template>
     
-    <div class="textoPresentacion">
-        
-        <h1> Hola! </h1>
-  
-        <p>
-            Mi nombre es Delfina y soy diseñadora gráfica con experiencia en BRANDING, DISEÑO DE REDES SOCIALES & PACKAGING. <br>
-            Mi objetivo es brindar a los clientes diseños únicos que se adapte a su visión y objetivos.<br>
-            Puedo ayudarte a hacer realidad el diseño que soñabas.<br>
-            Sigamos en contacto! :)
-        </p>
-        
+    <div class="contenedorTextoYBotones">
+
+        <div class="textoPresentacion">
+            <h1> Hola! </h1>
+            
+            <p>
+                Mi nombre es Delfina y soy diseñadora gráfica con experiencia en BRANDING, DISEÑO DE REDES SOCIALES & PACKAGING. <br>
+                Mi objetivo es brindar a los clientes diseños únicos que se adapte a su visión y objetivos.<br>
+                Puedo ayudarte a hacer realidad el diseño que soñabas.<br>
+                Sigamos en contacto! :)
+            </p>
+        </div>
         <app-contacto id="contacto"> </app-contacto>
-        
     </div>
 </div>
 
