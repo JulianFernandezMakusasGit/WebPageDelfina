@@ -1,8 +1,11 @@
-/* BARRA SUPERIOR */
 .inicio {
+    position: fixed;
+    top: 2%;
+    padding-left: 2%;
     background-color: transparent;
     border: 0px;
     cursor: pointer;
+    z-index: 9999;
 }
 
 .hidden {
@@ -14,7 +17,7 @@
     .barraSuperior {
         position: fixed;
         top: 0.2%;
-        left: 0;
+        left: 62px;
         width: 100%;
         z-index: 9999;
         background: transparent;
@@ -24,6 +27,7 @@
         height:66px;
         width:62px;
         top: auto;
+        background-color: transparent;
     }
 
     .proyectos {

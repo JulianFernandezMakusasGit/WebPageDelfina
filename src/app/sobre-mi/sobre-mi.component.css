@@ -15,36 +15,40 @@
         border-top-right-radius: 300px;
         z-index: 1;
         width: 100%;
+        padding-bottom: 2vh;
     }
     
     .textoSobreMi h1 {
         font-family: 'Sarabun', sans-serif;
-        font-size: 31px;
+        font-size: 48px;
         font-style: italic;
         font-weight: 400;
-        line-height: 46.8px;
+        line-height: 64px;
         color: #F8B133;
         padding-left: 5vw;
         padding-top: 10vw;
+        width: 90%;
     }
 
-    .textoSobreMi a {
+    .trabajo {
         font-family: 'Sarabun', sans-serif;
-        font-size: 12px;
-        line-height: 15.6px;
+        font-size: 20px;
+        line-height: 24px;
         color: #F8B133;
         padding-left: 5vw;
+        width: 80%;
     }
     
-    .textoSobreMi p {
+    .descripcion {
         background-color: inherit;
         border-top-right-radius: inherit;
         font-family: 'Sarabun', sans-serif;
-        font-size: 10px;
+        font-size: 20px;
         font-weight: 400;
-        line-height: 13px;
+        line-height: 24px;
         color: #FFFFFF;
         padding-left: 5vw;
+        width: 80%;
     }
 
     .estrellaFoto {

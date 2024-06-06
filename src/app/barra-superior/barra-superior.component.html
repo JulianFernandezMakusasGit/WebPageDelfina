@@ -1,25 +1,12 @@
 <div (mousemove)="checkMousePosition($event)">    
+    <button class="inicio" (click)="scrollTo('presentacion')">
+        <img class="logo" src="../../assets/BarraSuperior/logo blanco.svg">
+    </button>
     <mat-toolbar class="barraSuperior" [class.hidden]="isToolbarHidden">
-        <button class="inicio" (click)="scrollTo('presentacion')">
-            <img class="logo" src="../../assets/BarraSuperior/logo blanco.svg">
-        </button>
+        
         <button class="proyectos" (click)="scrollTo('proyectos')"> Proyectos </button>
         <button class="sobreMi" (click)="scrollTo('sobreMi')"> Sobre Mi </button>
         <button class="contacto" (click)="scrollTo('contacto')"> Contacto </button>
     </mat-toolbar>
 </div>
-
-<!-- <div class="barraSuperior">
-    Este es la imagen con el boton 
-    <button mat-button [matMenuTriggerFor]="menu"> 
-        <img class="logo" src="../../assets/BarraSuperior/logo blanco.svg">
-    </button>
-    Estas serian las opciones del menu 
-    <mat-menu #menu="matMenu" class="menuPrincipal">
-        <button mat-menu-item (click)="scrollTo('proyectos')"> Proyectos </button>
-        <button mat-menu-item (click)="scrollTo('sobreMi')"> Sobre Mi </button>
-        <button mat-menu-item (click)="scrollTo('presentacion')"> Contacto </button>
-    </mat-menu>
-</div> -->
-
   

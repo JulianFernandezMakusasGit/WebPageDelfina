@@ -28,7 +28,7 @@ export class BarraSuperiorComponent {
   hideTimeout: any;
 
   checkMousePosition(event: MouseEvent) {
-    const threshold = 10;
+    const threshold = 100;
 
     if (event.clientY <= threshold) {
       this.showToolbar();
