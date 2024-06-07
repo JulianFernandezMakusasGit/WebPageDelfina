@@ -126,14 +126,11 @@
     
     .textoPresentacion {
         background-color: transparent;
-        align-content: right;
+        position: inherit;
         font-family: 'Sarabun', sans-serif;
         float: right;
-        width: 38,5%;
         max-width: 740px;
-        height: 49,35%;
-        padding-left: 5%;
-        padding-bottom: 3%;
+        padding: 0%;
     }
     
     .textoPresentacion h1 {
