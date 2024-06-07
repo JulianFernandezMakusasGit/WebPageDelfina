@@ -50,6 +50,8 @@
     line-height: 18px;
     color: black;
     padding-left: 10px;
+    overflow-y: scroll;
+
   }
 }
 
