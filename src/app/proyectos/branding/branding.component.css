@@ -53,6 +53,12 @@ mat-grid-tile {
     align-items: center;
     border-radius: 10px;
   }
+
+  mat-grid-tile-footer {
+    max-height: 20%;
+    font-size: 1vh;
+    line-height: 1vh;
+  }
 }
 
 @media (min-width:700px)  { 

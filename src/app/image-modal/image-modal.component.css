@@ -11,7 +11,7 @@
   }
   
   .full-size-image {
-    max-height: 900px;
+    max-height: 450px;
     max-width: 300px;
     margin: 0px;
     padding: 0px;
@@ -28,7 +28,7 @@
   }
   
   .texto {
-    flex: 0.3;
+    flex: 1;
     max-height: 900px;
     overflow-y: scroll;
   }
@@ -53,6 +53,8 @@
     overflow-y: scroll;
 
   }
+
+  
 }
 
 @media (min-width: 800px) {
@@ -114,7 +116,6 @@
   .publicacion {
     display: flex;
     flex-direction: row;
-    row-gap: 30px;
     max-width: 1400px;
     background-color: transparent;
   }
@@ -125,6 +126,7 @@
   
   .full-size-image {
     max-height: 900px;
+    max-width: 1000px;
     margin: 0px;
     padding: 0px;
     background-color: transparent;
@@ -140,8 +142,9 @@
   }
   
   .texto {
-    flex: 0.3;
+    flex: 1;
     max-height: 900px;
+    width: 400px;
     overflow-y: scroll;
   }
   
