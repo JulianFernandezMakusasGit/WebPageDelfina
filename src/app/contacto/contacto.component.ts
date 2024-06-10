@@ -37,13 +37,13 @@ export class ContactoComponent {
   async onClickActivas() { }
 
   goToLinkedIn() {
-    const url = "https://www.linkedin.com/in/julian-fern%C3%A1ndez-makusas/";
+    const url = "https://www.linkedin.com/in/delfina-naturan-49966b144/";
     const nuevaPestania = window.open(url, '_blank');
     nuevaPestania?.focus;
   }
   
   desglozaCorreo() {
-    const textToCopy = "Este es el texto que quiero copiar"; // El texto que quieres copiar
+    const textToCopy = "delfinam.naturan96@gmail.com"; // El texto que quieres copiar
     navigator.clipboard.writeText(textToCopy).then(() => {
         console.log('Texto copiado al portapapeles');
     }).catch(err => {
@@ -52,7 +52,7 @@ export class ContactoComponent {
   }
   
   goToInstagram() {
-    const url = "https://www.instagram.com/julian_fernandez_makusas/";
+    const url = "https://www.instagram.com/delff.dg";
     const nuevaPestania = window.open(url, '_blank');
     nuevaPestania?.focus;
   }
