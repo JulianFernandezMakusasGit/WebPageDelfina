@@ -112,7 +112,7 @@
   }
 }
 
-@media (min-width: 1920px) {
+@media (min-width: 1279px) {
   .publicacion {
     display: flex;
     flex-direction: row;
