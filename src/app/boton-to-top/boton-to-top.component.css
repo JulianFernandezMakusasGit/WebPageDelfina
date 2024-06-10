@@ -42,7 +42,7 @@
     }
 }
 
-@media (min-width: 1920px) {
+@media (min-width: 1200px) {
     .corner-button {
         position: fixed;
         bottom: 20px;

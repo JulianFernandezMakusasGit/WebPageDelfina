@@ -121,7 +121,7 @@
     }
 }
 
-@media (min-width:1281px) { 
+@media (min-width:1200px) { 
     .barraSuperior {
         position: fixed;
         top: 5%;
